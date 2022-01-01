@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585333671781",
+    "project_id": "hackio-a183a",
+    "storage_bucket": "hackio-a183a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585333671781:android:b9dd9e98dabead3d9c038c",
+        "android_client_info": {
+          "package_name": "com.example.hackio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585333671781-fntgnas4403fil5vq7iqgkin2jsg0crv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgg59kAXNbeX7d5Ms6J7YNHuaS-gSaenY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585333671781-fntgnas4403fil5vq7iqgkin2jsg0crv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
