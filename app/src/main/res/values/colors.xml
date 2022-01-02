@@ -9,5 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cyan">#42C9D1</color>
     <color name="dark">#272525</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorOnPrimary">#336200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
 
 </resources>
