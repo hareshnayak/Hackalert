@@ -10,9 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hackio">
-        <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name=".splashscreen" android:theme="@style/splashscreen" android:exported="true">
+        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".splashscreen"
+            android:exported="true"
+            android:theme="@style/splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
