@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hackio</string>
+    <string name="search">search</string>
+    <string name="content_description_search">content description search</string>
+    <string name="set_a_reminder">set a reminder</string>
+    <string name="user_name">User Name</string>
 </resources>
