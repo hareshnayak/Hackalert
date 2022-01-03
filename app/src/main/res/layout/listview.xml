@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="false"
+    app:cardBackgroundColor="#003680FB"
+    app:cardCornerRadius="10dp"
+    app:checkedIconTint="#9E0E0E">
+
+    <LinearLayout
+        android:id="@+id/item_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/img" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                tools:text="Hackathon by hackerearth" />
+
+            <ImageButton
+                android:id="@+id/set_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/item_title"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/set_a_reminder"
+                android:src="@drawable/ic_baseline_add_alarm_24" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dateOfHackathon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="12/01/2022" />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
