@@ -35,6 +35,7 @@ class DashboardActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.nav_home -> {
                     Toast.makeText(this, "nav home me ho", Toast.LENGTH_SHORT).show()
+                    loggout()
                 }
                 R.id.akshay -> {
                     Toast.makeText(this, "akshayyyy", Toast.LENGTH_SHORT).show()

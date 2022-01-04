@@ -44,7 +44,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@+id/item_title"
                 android:background="#FFFFFF"
-                android:contentDescription="@string/set_a_reminder"
+                android:contentDescription="set_a_reminder"
                 android:src="@drawable/ic_baseline_add_alarm_24" />
         </RelativeLayout>
 
