@@ -4,12 +4,19 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.annotation.Nullable
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
@@ -52,6 +59,54 @@ class DashboardActivity : AppCompatActivity() {
 //        logout.setOnClickListener {
 //            loggout()
 //        }
+
+        setUpTabs()
+    }
+
+    private fun setUpTabs() {
+
+        val tab_toolbar = findViewById<Toolbar>(R.id.toolbar)
+        val tab_viewpager = findViewById<ViewPager>(R.id.tab_viewpager)
+        val tab_tablayout = findViewById<TabLayout>(R.id.tab_tablayout)
+
+        setSupportActionBar(tab_toolbar)
+        setUpViewPager(tab_viewpager)
+
+        tab_tablayout.setupWithViewPager(tab_viewpager)
+
+    }
+
+    private fun setUpViewPager(viewPager: ViewPager) {
+        var adapter: ViewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
+        adapter.addFragment(OngoingFragment(), "Ongoing")
+        adapter.addFragment(UpcomingFragment(), "Upcoming")
+
+        viewPager.setAdapter(adapter)
+    }
+
+    class ViewPagerAdapter: FragmentPagerAdapter {
+        private final var fragmentList1: ArrayList<Fragment> = ArrayList()
+        private final var fragmentTitleList1: ArrayList<String> = ArrayList()
+
+        public constructor(supportFragmentManager: FragmentManager) : super(supportFragmentManager)
+
+        override fun getItem(position: Int): Fragment {
+            return fragmentList1.get(position)
+        }
+
+        @Nullable
+        override fun getPageTitle(position: Int): CharSequence {
+            return fragmentTitleList1.get(position)
+        }
+
+        override fun getCount(): Int {
+            return fragmentList1.size
+        }
+
+        fun addFragment(fragment: Fragment, title: String) {
+            fragmentList1.add(fragment)
+            fragmentTitleList1.add(title)
+        }
     }
 
     private fun loggout() {
