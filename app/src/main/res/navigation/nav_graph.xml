@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+
+    <fragment
+        android:id="@+id/ongoingFragment"
+        android:name="com.example.hackio.OngoingFragment"
+        android:label="OngoingFragment" >
+        <action
+            android:id="@+id/action_ongoingFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="com.example.hackio.UpcomingFragment"
+        android:label="UpcomingFragment" >
+        <action
+            android:id="@+id/action_upcomingFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.example.hackio.DisplayFragment"
+        android:label="fragment_display"
+        tools:layout="@layout/fragment_display" />
+</navigation>
