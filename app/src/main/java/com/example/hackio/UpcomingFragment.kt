@@ -26,7 +26,7 @@ class UpcomingFragment : Fragment(),Uplisten {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        (activity as AppCompatActivity).supportActionBar!!.hide()
+
         val binding = FragmentUpcomingBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.dataup = sharedViewModel

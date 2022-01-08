@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hackio.databinding.FragmentOngoingBinding
@@ -27,7 +28,7 @@ class OngoingFragment : Fragment(),Onlisten {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        (activity as AppCompatActivity).supportActionBar!!.hide()
+
         val binding = FragmentOngoingBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.dataon =sharedViewModel

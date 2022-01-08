@@ -3,15 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Hackio/app/src/main/res/layout/activity_dashboard.xml" value="0.16621376811594202" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/aftdata.xml" value="0.16621376811594202" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/dashboard.xml" value="0.13020833333333334" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/fragment_display.xml" value="0.13020833333333334" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/fragment_list.xml" value="0.13020833333333334" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/fragment_ongoing.xml" value="0.16621376811594202" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/fragment_upcoming.xml" value="0.16621376811594202" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/listview.xml" value="0.16621376811594202" />
-        <entry key="..\:/Hackio/app/src/main/res/layout/updata.xml" value="0.16621376811594202" />
+        <entry key="..\:/Hackio/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Hackio/app/src/main/res/layout/aftdata.xml" value="0.1634963768115942" />
+        <entry key="..\:/Hackio/app/src/main/res/layout/fragment_firstfrag.xml" value="0.1" />
+        <entry key="..\:/Hackio/app/src/main/res/layout/listview.xml" value="0.1634963768115942" />
+        <entry key="..\:/Hackio/app/src/main/res/layout/updata.xml" value="0.1634963768115942" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Hackio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Hackio/app/src/main/res/drawable/ic_baseline_add_alarm_24.xml" value="0.2128205128205128" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Hackio/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21614583333333334" />
