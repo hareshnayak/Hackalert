@@ -12,7 +12,10 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import androidx.viewpager.widget.ViewPager
+import com.example.hackio.databinding.ActivityDashboardBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -26,6 +29,7 @@ class DashboardActivity : AppCompatActivity() {
 
     // declare the GoogleSignInClient
     lateinit var mGoogleSignInClient: GoogleSignInClient
+    lateinit var binding: ActivityDashboardBinding
 
     private val auth by lazy {
         FirebaseAuth.getInstance()
@@ -35,6 +39,10 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.navigation_view) as NavHostFragment
+        val navController = navHostFragment.navController
+        binding.navigationView.setupWithNavController(navController)
 
         setSupportActionBar(findViewById(R.id.toolbar))
 

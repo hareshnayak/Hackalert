@@ -11,7 +11,7 @@ import androidx.annotation.RequiresApi
 
 class DisplayFragment : Fragment() {
 
-    lateinit var webView: WebView
+//    lateinit var webView: WebView
     var cont: ContestsItem? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,17 +31,17 @@ class DisplayFragment : Fragment() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        webView = view.findViewById(R.id.myweb)
+//        webView = view.findViewById(R.id.myweb)
 
         var mWebView : WebView? = null
-        mWebView = view?.findViewById(R.id.myweb) as WebView?
+        mWebView = requireView().findViewById(R.id.myweb) as WebView?
         cont?.url?.let { mWebView?.loadUrl(it) }
 
-        val webSettings = mWebView?.getSettings()
-        webSettings?.setJavaScriptEnabled(true)
-        webSettings?.safeBrowsingEnabled = false
-
-        mWebView?.setWebViewClient(WebViewClient())
+//        val webSettings = mWebView?.getSettings()
+//        webSettings?.setJavaScriptEnabled(true)
+//        webSettings?.safeBrowsingEnabled = false
+//
+//        mWebView?.setWebViewClient(WebViewClient())
 
         mWebView?.canGoBack()
         mWebView?.setOnKeyListener( View.OnKeyListener{ v,keyCode,event ->
